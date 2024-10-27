@@ -1,0 +1,28 @@
+{
+	"name": "coursudemyjest",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"jest": {
+		"testEnvironment": "node",
+		"setupFilesAfterEnv": [
+			"<rootDir>/public/js/setupJest.js"
+		],
+		"watchPlugins": [
+			"<rootDir>/public/js/watchPlugins.js"
+		],
+		"coveragePathIgnorePatterns": [
+			"/node_modules"
+		]
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"express": "^4.21.1",
+		"jest": "^29.7.0",
+		"supertest": "^7.0.0"
+	}
+}
